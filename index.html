@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashFlow</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>FlashFlow</h1>
+        <p>Flashcards para estudar JavaScript</p>
+    </header>
+
+    <main>
+        <div class="container">
+            <p id="posicao" class="posicao">Card 1 de 5</p>
+
+            <div id="card" class="card" onclick="virarCard()">
+                <p id="card-texto">Clique para começar</p>
+                <p class="card-dica">Clique para virar</p>
+            </div>
+
+            <button id="btn-proximo" onclick="proximoCard()">Próximo Card</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>FlashFlow - Desafio Fase 1</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
