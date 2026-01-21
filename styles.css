@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #0D0D1A;
+    background-color: #1E1E1E;
     color: #FFFFFF;
 }
 
@@ -16,14 +16,14 @@ header {
 
 header h1 {
     font-family: 'Sora', sans-serif;
-    font-size: 20px;
+    font-size: 32px;
     font-weight: bold;
     margin-bottom: 8px;
 }
 
 header p {
-    color: #E1E0E2;
-    font-size: 14px;
+    color: #E2E2E2;
+    font-size: 16px;
 }
 
 main {
@@ -32,57 +32,98 @@ main {
 }
 
 .container {
-    width: 500px;
+    max-width: 400px;
     margin: 0 auto;
 }
 
 .posicao {
     font-size: 14px;
-    color: #E1E0E2;
-    margin-bottom: 24px;
+    color: #E2E2E2;
+    margin-bottom: 16px;
 }
 
 .card {
-    background-color: #3F4468;
+    background-color: #FFFFFF;
+    border: 2px dashed #8B5CF6;
     border-radius: 16px;
-    padding: 48px 32px;
-    min-height: 280px;
+    padding: 40px 24px;
+    min-height: 180px;
     cursor: pointer;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #card-texto {
     font-size: 24px;
+    font-weight: 500;
+    color: #3F465B;
+    text-align: center;
 }
 
 .card-dica {
     font-size: 14px;
-    color: #E1E0E2;
-    margin-top: 24px;
+    color: #3F465B;
+    margin-top: 16px;
+}
+
+.virado {
+    background-color: #F8F7FF;
 }
 
 .virado #card-texto {
-    color: #AA92FC;
+    color: #6A3FCB;
 }
 
 #btn-proximo {
-    background-color: #855CF8;
+    background-color: #8B5CF6;
     color: #FFFFFF;
     border: none;
-    padding: 14px 32px;
+    padding: 14px 24px;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 600;
     border-radius: 8px;
     cursor: pointer;
 }
 
 #btn-proximo:hover {
-    background-color: #7B7FFF;
+    background-color: #6A3FCB;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    color: #E1E0E2;
+    color: #E2E2E2;
     font-size: 14px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 90%;
+        padding: 0 16px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .card {
+        padding: 32px 16px;
+        min-height: 150px;
+    }
+
+    #card-texto {
+        font-size: 18px;
+    }
+
+    #btn-proximo {
+        width: 100%;
+        padding: 16px;
+    }
 }
